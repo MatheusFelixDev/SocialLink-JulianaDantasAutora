@@ -191,7 +191,7 @@ footer {
   transition: background 0.2s;
 }
 
-ul li a:hover  {
+.emphasis ul li:hover  {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
 }
@@ -208,9 +208,6 @@ ul li a:hover  {
 .emphasis a img {
      max-width: 100%;
     height: auto;
-    
-   
-    
 }
 
 

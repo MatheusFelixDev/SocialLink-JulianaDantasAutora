@@ -1,236 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <!-- Metadados da página -->
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juliana Dantas</title>
-
-    <!-- Estilos -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
-    <!-- Importa o arquivo de estilos personalizados -->
+    <link rel="stylesheet" href="styles/custom.css" /> <!-- Adiciona um arquivo de estilos personalizados separado -->
+   
+</head>
 
-    <!-- Scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="./script.js"></script>
-    <!-- Importa o arquivo de scripts personalizados -->
-  </head>
-
-  <body>
-    <!-- Contêiner principal da página -->
+<body>
     <div id="container">
-      <!-- Cabeçalho da página -->
-      <header>
-        <!-- Interruptor de modo escuro/claro -->
-        <div id="switch" onclick="toggleMode()">
-          <button></button>
-          <span></span>
+        <header>
+            <div id="switch" onclick="toggleMode()">
+                <button></button>
+                <span></span>
+            </div>
+        </header>
+
+        <section id="profile">
+            <img src="./assets/avatar.jpg" alt="Avatar Norju Arquitetura"/>
+            <h1>Juliana Dantas</h1>
+        </section>
+
+        <section id="bio">
+            <p>Escritora de romances, sempre planejando a próxima viagem</p>
+        </section>
+
+        <section id="shops">
+            <a href="https://www.amazon.com.br/stores/author/B07F9MJKHS" target="_blank">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/amazon.png" alt="amazon" />
+            </a>
+            <!-- Adiciona títulos alternativos para imagens -->
+            <a href="https://www.julianadantasromances.com/shop" target="_blank">
+                <img width="50" height="50" src="https://img.icons8.com/ios-glyphs/30/shopping-cart--v1.png" alt="shopping-cart--v1" />
+            </a>
+            <a href="https://www.audible.com.br/author/Juliana-Dantas/B07F9MJKHS?ref_pageloadid=not_applicable&ref=a_search_c3_1_3_1&pf_rd_p=be795e78-ebc4-4ead-be74-dd270919ca8f&pf_rd_r=52NHP345NZ0JSWPWCGJN&pageLoadId=Jvbia4SFQ8fZC5a1&creativeId=5625fbcd-ee72-4051-9f9d-3dd785079b4e" target="_blank">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/audible.png" alt="audible" />
+            </a>
+        </section>
+
+        <h2>Destaques:</h2>
+        <div class="emphasis">
+            <ul>
+                <li>
+                    <a href="https://www.amazon.com.br/dp/B0CQPZQB9J" target="_blank">
+                        <img src="./assets/marido de mentira_.png" alt="capa do livro Um Marido de Mentira para o Natal"/>
+                        Um Marido de Mentira para o Natal
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.amazon.com.br/dp/B0CM5G22VK?ref_=cm_sw_r_mwn_dp_EC248H867V49T4G5C2Z0&language=en_US" target="_blank">
+                        <img src="./assets/perversos_.png" alt="capa do livro Perversos: Um Romance Enemies ..."/>
+                        Perversos: Um Romance Enemies ...
+                    </a>
+                </li>
+            </ul>
         </div>
-      </header>
 
-      <!-- Seção do perfil -->
-      <section id="profile">
-        <img src="./assets/avatar.jpg" alt="Avatar Norju Arquitetura" />
-        <h1>Juliana Dantas</h1>
-      </section>
+        <h2>Pré-vendas:</h2>
+        <div class="emphasis">
+            <ul>
+                <li>
+                    <a href="https://www.amazon.com.br/dp/B0CRS74K6R" target="_blank">
+                        <img src="./assets/maldita escocesa_.png" alt="capa do livro Maldita Escocesa"/>
+                        Maldita Escocesa
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.julianadantasromances.com/product-page/os-contos-de-julie-e-simon" target="_blank">
+                        <img src="./assets/julia.png" alt="capa do livro (físico) Os Contos de Julie e Simon"/>
+                        (físico) Os Contos de Julie e Simon
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.julianadantasromances.com/product-page/perversos-um-romance-enemies-to-lovers-de-halloween" target="_blank">
+                        <img src="./assets/perversos_.png" alt="capa do livro (físico) Perversos: Um Romance Enemies ..."/>
+                        (físico) Perversos: Um Romance Enemies ...
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.julianadantasromances.com/product-page/um-marido-de-mentira-para-o-natal" target="_blank">
+                        <img src="./assets/marido de mentira_.png" alt="capa do livro (físico) Um Marido de Mentira para o Natal" />
+                        (físico) Um Marido de Mentira para o Natal
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-      <!-- Seção da biografia -->
-      <section id="bio">
-        <p>Escritora de romances, sempre planejando a próxima viagem</p>
-      </section>
-
-      <!-- Seção de links sociais -->
-      <section id="shops">
-        <!-- Links para redes sociais -->
-        <a
-          href="https://www.amazon.com.br/stores/author/B07F9MJKHS"
-          target="_blank"
-        >
-          <img
-            width="50"
-            height="50"
-            src="https://img.icons8.com/ios-filled/50/amazon.png"
-            alt="amazon"
-          />
-        </a>
-        <a href="https://www.julianadantasromances.com/shop" target="_blank">
-          <img
-            width="50"
-            height="50"
-            src="https://img.icons8.com/ios-glyphs/30/shopping-cart--v1.png"
-            alt="shopping-cart--v1"
-          />
-        </a>
-        <a
-          href="https://www.audible.com.br/author/Juliana-Dantas/B07F9MJKHS?ref_pageloadid=not_applicable&ref=a_search_c3_1_3_1&pf_rd_p=be795e78-ebc4-4ead-be74-dd270919ca8f&pf_rd_r=52NHP345NZ0JSWPWCGJN&pageLoadId=Jvbia4SFQ8fZC5a1&creativeId=5625fbcd-ee72-4051-9f9d-3dd785079b4e"
-          target="_blank"
-        >
-          <img
-            width="50"
-            height="50"
-            src="https://img.icons8.com/ios-filled/50/audible.png"
-            alt="audible"
-          />
-        </a>
-      </section>
-      <h2>Destaques:</h2>
-      <!-- Seção de destaques -->
-      <div class="emphasis">
-        <ul>
-          <!-- Itens destacados com links -->
-          <li>
-            <a href="https://www.amazon.com.br/dp/B0CQPZQB9J" target="_blank">
-              <img
-                src="./assets/marido de mentira_.png"
-                alt="capa do livro Um Marido de Mentira para o Natal"
-              />
-              Um Marido de Mentira para o Natal
+        <section id="social-links">
+            <a href="https://www.instagram.com/reel/C1mEb5-I-fy/?igsh=MXA0anh3OW4xNG00" target="_blank">
+                <img width="40" height="40" src="https://img.icons8.com/ios-filled/50/instagram-new--v1.png" alt="Instagram" />
             </a>
-          </li>
-          <li>
-            <a
-              href="https://www.amazon.com.br/dp/B0CM5G22VK?ref_=cm_sw_r_mwn_dp_EC248H867V49T4G5C2Z0&language=en_US"
-              target="_blank"
-            >
-              <img src="./assets/perversos_.png" />
-              Perversos: Um Romance Enemies ...
+            <a href="https://chat.whatsapp.com/EJTq9jTuRI37JLcHXib3vV" target="_blank">
+                <img width="40" height="40" src="https://img.icons8.com/ios-filled/50/whatsapp--v2.png" alt="WhatsApp" />
             </a>
-          </li>
-        </ul>
-      </div>
-
-      <h2>Pré-vendas:</h2>
-      <!-- Seção de pré-vendas -->
-      <div class="emphasis">
-        <ul>
-          <!-- Itens em pré-venda com links -->
-          <li>
-            <a href="https://www.amazon.com.br/dp/B0CRS74K6R" target="_blank">
-              <img src="./assets/maldita escocesa_.png" />
-              Maldita Escocesa
+            <a href="https://t.me/joinchat/XUrJLSWiuD04YmM5" target="_blank">
+                <img width="40" height="40" src="https://img.icons8.com/ios-filled/50/telegram.png" alt="Telegram" />
             </a>
-          </li>
-          <li>
-            <a
-              href="https://www.julianadantasromances.com/product-page/os-contos-de-julie-e-simon"
-              target="_blank"
-            >
-              <img src="./assets/julia.png" />
-              (físico) Os Contos de Julie e Simon
+        </section>
+
+        <section id="social-links">
+            <a href="https://m.facebook.com/groups/2119115758220372/" target="_blank">
+                <img width="40" height="40" src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="Facebook" />
             </a>
-          </li>
-          <li>
-            <a
-              href="https://www.julianadantasromances.com/product-page/perversos-um-romance-enemies-to-lovers-de-halloween"
-              target="_blank"
-            >
-              <img src="./assets/perversos_.png" />
-              (físico) Perversos: Um Romance Enemies ...
+            <a href="https://www.wattpad.com/user/Ju-Dantas" target="_blank">
+                <img width="40" height="40" src="https://img.icons8.com/ios-filled/50/wattpad--v2.png" alt="Wattpad" />
             </a>
-          </li>
-          <li>
-            <a
-              href="https://www.julianadantasromances.com/product-page/um-marido-de-mentira-para-o-natal"
-              target="_blank"
-            >
-              <img src="./assets/marido de mentira_.png" />
-              (físico) Um Marido de Mentira para o Natal
+            <a href="https://www.skoob.com.br/autor/15961-juliana-dantas" target="_blank">
+                <img width="40" height="40" src="./assets/iconSkoob.svg" alt="Skoob" />
             </a>
-          </li>
-        </ul>
-      </div>
+        </section>
 
-      <!-- links sociais -->
-      <!-- Seção de links sociais -->
-
-      <section id="social-links">
-        <a
-          href="https://www.instagram.com/reel/C1mEb5-I-fy/?igsh=MXA0anh3OW4xNG00"
-          target="_blank"
-        >
-          <img
-            width="40"
-            height="40"
-            src="https://img.icons8.com/ios-filled/50/instagram-new--v1.png"
-          />
-        </a>
-
-        <a
-          href="https://chat.whatsapp.com/EJTq9jTuRI37JLcHXib3vV"
-          target="_blank"
-        >
-          <img
-            width="40"
-            height="40"
-            src="https://img.icons8.com/ios-filled/50/whatsapp--v2.png"
-            alt="whatsapp--v2"
-          />
-        </a>
-
-        <a href="https://t.me/joinchat/XUrJLSWiuD04YmM5" target="_blank">
-          <img
-            width="40"
-            height="40"
-            src="https://img.icons8.com/ios-filled/50/telegram.png"
-            alt="telegram"
-          />
-        </a>
-      </section>
-
-      <section id="social-links">
-        <a
-          href="https://m.facebook.com/groups/2119115758220372/"
-          target="_blank"
-        >
-          <img
-            width="40"
-            height="40"
-            src="https://img.icons8.com/ios-filled/50/facebook-new.png"
-            alt="facebook-new"
-          />
-        </a>
-
-        <a href="https://www.wattpad.com/user/Ju-Dantas" target="_blank">
-          <img
-            width="40"
-            height="40"
-            src="https://img.icons8.com/ios-filled/50/wattpad--v2.png"
-            alt="wattpad--v2"
-          />
-        </a>
-
-        <a
-          href="https://www.skoob.com.br/autor/15961-juliana-dantas"
-          target="_blank"
-        >
-          <img
-            width="40"
-            height="40"
-            src="./assets/iconSkoob.svg"
-            alt="skoob--v2"
-          />
-        </a>
-      </section>
-
-      <!-- Rodapé da página -->
-      <footer>
-        Feito com ♥ pela
-        <a href="http://createsolutionsworld.com/">CreateSolutionsWorld</a>
-      </footer>
+        <footer>
+            Feito com ♥ pela <a href="http://createsolutionsworld.com/">CreateSolutionsWorld</a>
+        </footer>
     </div>
-  </body>
+
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer src="./scripts/script.js"></script> <!-- Usar defer para garantir que o script seja carregado após o HTML -->
+</body>
 </html>
