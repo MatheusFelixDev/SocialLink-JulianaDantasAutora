@@ -32,6 +32,11 @@ body {
   margin: 0;
 }
 
+
+h2{
+  padding: 12px;
+}
+
 body *,
 #container,
 #profile,
