@@ -5,8 +5,8 @@
 }
 
 :root {
-  --text-color: black;
-  --bg-url: url(./assets/bg-mobile.png);
+  --text-color: white;
+  --bg-url: url(./assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -15,8 +15,8 @@
 }
 
 .light {
-  --text-color: white;
-  --bg-url: url(./assets/bg-mobile-light.png);
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -77,7 +77,7 @@ footer {
 }
 
 .light #profile p {
-  color: white;
+  color: black;
 }
 
 #bio {
@@ -92,7 +92,7 @@ footer {
 }
 
 .light #bio p {
-  color: white;
+  color: black;
 }
 
 .icon {
@@ -118,7 +118,7 @@ footer {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
-  animation: slide-back 0.2s;
+  animation: slide-back 0.2s forwards;
 }
 
 .light #switch button {
@@ -154,7 +154,11 @@ footer {
   padding: 16px;
   transition: background 0.2s;
   border-radius: 50%;
+  background-color: aliceblue;
+  margin: 8px;
 }
+
+
 
 #shops a:hover {
   background: var(--highlight-color);
@@ -163,7 +167,6 @@ footer {
 .emphasis {
     /* Estilo para a div de destaque */
     padding: 12px;
-    background-color: #f5f5f5;
     text-align: center;
     /* Centralizando o texto dentro da div de destaque */
 }
@@ -225,6 +228,7 @@ footer {
   padding: 16px;
   transition: background 0.2s;
   border-radius: 50%;
+  margin: 8px;
 }
 
 #social-links a:hover {
@@ -239,11 +243,11 @@ footer {
 
 @media (min-width: 700px) {
   :root {
-    --bg-url: url(./assets/bg-desktop.png);
+    --bg-url: url(./assets/bg-desktop.jpg);
   }
 
   .light {
-    --bg-url: url(./assets/bg-desktop-light.png);
+    --bg-url: url(./assets/bg-desktop-light.jpg);
   }
 }
 
